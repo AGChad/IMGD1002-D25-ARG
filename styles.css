@@ -1,0 +1,59 @@
+:root {
+    --button-color: rgb(177, 254, 203);
+    --button-hover: rgb(164, 239, 189);
+}
+
+body {
+    text-align: center;   
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    margin-block: 5px;
+}
+
+#navbar {
+    display: block;
+    margin: auto auto;
+    width: 90%;
+    height: 7%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.navbutton {
+    font-size: large;
+    font-weight: bold;
+    display: inline;
+    padding-inline: 10px;
+    padding-block: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--button-color);
+    margin: 10px 10px;
+}
+
+.navbutton:hover {
+    background-color: var(--button-hover);
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);;
+}
+
+#img {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    height: 212px;
+    width: 320px;
+    background-image: url("solarpunk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bouncebox {
+    height: 80vh;
+    width: 90vw;
+}
