@@ -16,5 +16,5 @@ const picturePuzzle = new PicturePuzzle(
 
 
 picturePuzzle.onFinished = function() {
-    console.log("Good job");
+    alert("Good job");
 };

@@ -60,11 +60,13 @@ export default class PicturePuzzle {
       const j = Math.floor(Math.random() * (i + 1));
       this.swapCells(i, j);
     }
+    if(!this.validConfig()){
+      this.shuffle();
+    }
     this.shuffling = false;
   }
 
   swapCells(i, j, animate) {
-
 
     this.cells[i].setPosition(j, animate, i);
     this.cells[j].setPosition(i);
@@ -94,6 +96,28 @@ export default class PicturePuzzle {
 
   findEmpty() {
     return this.cells.findIndex(cell => cell.isEmpty);
+  }
+
+  //This only works for 3x3 for now
+  validConfig() {
+    let current = [];
+
+    for(let i = 0; i < this.cells.length; i++) {
+      current.push(this.cells[i].index);
+    }
+
+    let count = 0;
+    for (let i = 0; i < 8; i++){
+        for (let j = i+1; j < 9; j++){
+            if (current[j] && current[i] && current[i] > current[j]){
+                count += 1                      
+            }
+        }
+    }
+
+
+    console.log(count % 2 == 0);
+    return count % 2 == 0;
   }
 }
 
