@@ -24,8 +24,9 @@ export default class Cell {
   createDiv() {
     const div = document.createElement('div');
     div.style.backgroundSize = `${this.puzzle.width}px ${this.puzzle.height}px`;
-    div.style.border = '1px solid white';
+    div.style.border = '1px solid #d7c3cd';
     div.style.position = 'absolute';
+    div.className = "tile";
 
     div.onclick = () => {
 
@@ -45,6 +46,7 @@ export default class Cell {
         this.puzzle.swapCells(currentCellIndex, emptyCellIndex, true);
       }
     };
+
 
     return div;
   }

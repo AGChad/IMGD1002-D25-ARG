@@ -2,32 +2,42 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Solarpunk ARG</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="bounce.js"></script>
+        <title>Picture puzzle game</title>
+        <script src="Slider/app.js" type="module"></script>
+        <link rel="stylesheet" href="Slider/slider.css">
     </head>
-    <body>
-        <div id="header">
-            <h1>Solarpunk ARG</h1>
-            <div id="navbar">
-                <a href="dev.html">
-                    <button class="navbutton">Fishing Minigame</button>
-                </a>
-                <a href="dev.html">
-                    <button class="navbutton">Creature Catalogue</button>
-                </a>
-                <a href="dev.html">
-                    <button class="navbutton">Map</button>
-                </a>
-                <a href="Slider/slider.html">
-                    <button class="navbutton">Sliding Puzzle</button>
-                </a>
+
+    <body class="body">
+        <a href="home.html">
+            <button class="secret">Secret Button</button>
+        </a>
+        <div id="puzzle-wrapper">
+            <div>
+                <!-- <h1>3x3</h1> -->
+            </div>
+            <div>
+                <!-- <h1>4x4</h1> -->
             </div>
         </div>
 
-        <div id="bouncebox">
-            <div id="img"></div>
+
+
+    <!-- Modal -->
+    <!-- <div id="success-modal" class="modal-wrapper" style="display: none">
+        <div class="modal">
+            <div class="head">
+                <a class="btn-close trigger" href="#">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="content">
+                <div class="good-job">
+                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                    <h1>Good Job!</h1>
+                </div>
+            </div>
         </div>
+    </div> -->
+
     </body>
 </html>

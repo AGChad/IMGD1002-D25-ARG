@@ -51,7 +51,7 @@ export default class PicturePuzzle {
     for (let i = 0; i < this.dimmension * this.dimmension; i++) {
       this.cells.push(new Cell(this, i));
     }
-    this.shuffle();
+    this.customArrange();
   }
 
   shuffle() {
@@ -64,6 +64,11 @@ export default class PicturePuzzle {
       this.shuffle();
     }
     this.shuffling = false;
+  }
+
+  customArrange() {
+    this.swapCells(0,2);
+    this.swapCells(4,5);
   }
 
   swapCells(i, j, animate) {

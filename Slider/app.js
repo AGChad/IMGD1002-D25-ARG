@@ -3,8 +3,8 @@ import PicturePuzzle from './PicturePuzzle.js'
 
 const picturePuzzle = new PicturePuzzle(
     document.querySelectorAll('#puzzle-wrapper > div')[0],
-    '../solarpunk.png',
-    600
+    './Slider/non_corporate_logo.png',
+    400
 );
 
 // const picturePuzzle2 = new PicturePuzzle(
@@ -16,5 +16,7 @@ const picturePuzzle = new PicturePuzzle(
 
 
 picturePuzzle.onFinished = function() {
-    alert("Good job");
+    setTimeout(function(){
+        window.location.href = "home.html";
+    }, 1000);
 };
