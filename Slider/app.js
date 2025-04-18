@@ -16,7 +16,12 @@ const picturePuzzle = new PicturePuzzle(
 
 
 picturePuzzle.onFinished = function() {
-    setTimeout(function(){
-        window.location.href = "home.html";
-    }, 1000);
+    let secret_button = document.getElementById("secret");
+    secret_button.className += " visible";
+
+    let secret_div = document.getElementsByClassName("secret")[0];
+    secret_div.style.color = "black";
+    // setTimeout(function(){
+    //     window.location.href = "home.html";
+    // }, 1000);
 };

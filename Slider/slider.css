@@ -7,13 +7,30 @@ body {
     background-color: #d7c3cd;
 }
 
-.secret{
+a {
+    text-decoration: none !important;
+}
+
+.secret {
+    text-align: center;
     color: #d7c3cd;
-    padding: 25px;
+    margin: auto auto;
+    display: block;
+    width: 80%;
+}
+
+.secret-button{
+    color: #d7c3cd;
+    padding: 15px;
     border: none;
     background-color: #d7c3cd;
-    margin: 10px 10px;
-    position: absolute;
+    margin: auto auto;
+    display: block;
+}
+
+.visible {
+    color: black;
+    border: 1px solid black;
 }
 
 .secret:hover {
