@@ -28,7 +28,7 @@ body {
 }
 
 .scroller {
-    max-width: 1000px;
+    max-width: 60%;
     margin: auto auto;
     overflow: hidden;
     touch-action: none;
