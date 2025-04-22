@@ -11,6 +11,10 @@ a {
     text-decoration: none !important;
 }
 
+.a:hover {
+    cursor: pointer;
+}
+
 .secret {
     text-align: center;
     color: #d7c3cd;
@@ -19,13 +23,14 @@ a {
     width: 80%;
 }
 
+
 .secret-button{
     color: #d7c3cd;
     padding: 15px;
     border: none;
     background-color: #d7c3cd;
     margin: auto auto;
-    display: block;
+    display: inline-block;
 }
 
 .visible {
@@ -33,7 +38,7 @@ a {
     border: 1px solid black;
 }
 
-.secret:hover {
+.secret-button:hover {
     cursor: pointer;
 }
 

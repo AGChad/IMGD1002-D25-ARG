@@ -10,10 +10,12 @@
 
 body {
     text-align: center;   
-    font-family: Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("newpaper_flora.jpg");
+    background-repeat: repeat;
 }
 
-h1 {
+#title {
     font-family: earwig;
     font-size: 75px;
     margin-block: 5px;
@@ -41,6 +43,7 @@ a {
 .navbutton {
     font-size: large;
     font-weight: bold;
+    font-family: monospace;
     display: inline;
     padding-inline: 10px;
     padding-block: 10px;
@@ -56,23 +59,11 @@ a {
     box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);;
 }
 
-#img {
-    position: absolute;
-    left: 50px;
-    top: 50px;
-    height: 212px;
-    width: 320px;
-    background-image: url("solarpunk.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#bouncebox {
-    height: 50vh;
-    width: 90vw;
-}
-
 #mission {
     margin-inline: auto;
     width: 50vw;
+}
+
+.inner-text {
+    font-weight:bold;
 }

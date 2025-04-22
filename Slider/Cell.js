@@ -80,7 +80,7 @@ export default class Cell {
   }
 
   animate(position, currentPosition, destination) {
-    const animationDuration = 500;
+    const animationDuration = 250;
     const frameRate = 10;
     let step = frameRate * Math.abs((destination - currentPosition)) / animationDuration;
 
