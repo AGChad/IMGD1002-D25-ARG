@@ -10,6 +10,17 @@ window.onload = () => {
     }
 
     document.querySelectorAll(".scroller").forEach(pointerScroll);
+
+    const textInput = (elem) => {
+        // Not working
+        const updateText = (ev) => elem.textContent = letterShift(1, 1, elem.textContent);
+
+        elem.addEventListener("change", function(evt) {
+            evt.target.value = letterShift(1, 1, evt.target.value);
+        });
+    }
+
+    document.querySelectorAll(".input").forEach(textInput);
 }
 
 function letterShift(x, y, code) {
@@ -19,15 +30,24 @@ function letterShift(x, y, code) {
 
     let newString = "";
     for (let i = 0; i < mapString.length; i++) {
-        let unicode = mapString[i].charCodeAt(0);
-        unicode += shift;
-        if (unicode > 90) {
-            unicode -= 26;
-        } else if (unicode < 65) {
-            unicode += 26;
-        }
 
-        newString += String.fromCharCode(unicode);
+        if (mapString[i] === '.' ||
+            mapString[i] === '!' ||
+            mapString[i] === '?' ||
+            mapString[i] === ' ') {
+            newString += mapString[i];
+        }
+        else {
+            let unicode = mapString[i].charCodeAt(0);
+            unicode += shift;
+            if (unicode > 90) {
+                unicode -= 26;
+            } else if (unicode < 65) {
+                unicode += 26;
+            }
+
+            newString += String.fromCharCode(unicode);
+        }
     }
 
     return newString;
