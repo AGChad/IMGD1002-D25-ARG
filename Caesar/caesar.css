@@ -50,6 +50,10 @@ body {
     gap: 0.5rem;
 }
 
+.letter {
+    min-width: 40px;
+}
+
 /* Scroll Testing
 .parent {
     width: 300px;
