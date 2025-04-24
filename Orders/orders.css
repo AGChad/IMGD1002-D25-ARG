@@ -1,0 +1,65 @@
+:root {
+    --button-color: rgb(88, 133, 76, 0.6);
+    --button-hover: rgb(88, 133, 76, 0.8);
+}
+
+@font-face {
+    font-family: earwig;
+    src: url("../fonts/earwig_factory/earwig factory rg.otf");
+}
+
+body {
+    text-align: center;   
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../newpaper_flora.jpg");
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: large;
+    font-weight: bold;
+    font-family: monospace;
+    padding-inline: 25px;
+    padding-block: 15px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    background-color: var(--button-color);
+}
+
+.back-button:hover {
+    background-color: var(--button-hover);
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+}
+
+.spacer {
+    width: 70px;
+    height: 30px;
+}
+
+.title {
+    font-family: earwig;
+    font-size: 65px;
+    margin-block: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: auto auto;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+.inner-text {
+    font-weight:bold;
+}
