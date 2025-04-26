@@ -1,4 +1,9 @@
 
+:root {
+    --button-color: rgb(88, 133, 76, 0.6);
+    --button-hover: rgb(88, 133, 76, 0.8);
+}
+
 @font-face {
     font-family: earwig;
     src: url("../fonts/earwig_factory/earwig factory rg.otf");
@@ -6,8 +11,35 @@
 
 body {
     text-align: center;
+    background-image: url("../newpaper_flora.jpg");
+    background-repeat: repeat;
 }
 
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: large;
+    font-weight: bold;
+    font-family: monospace;
+    padding-inline: 25px;
+    padding-block: 15px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    background-color: var(--button-color);
+}
+
+.back-button:hover {
+    background-color: var(--button-hover);
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+}
+
+.spacer {
+    width: 70px;
+    height: 30px;
+}
 
 .tag-list {
     margin: 0;
@@ -54,17 +86,30 @@ body {
     min-width: 40px;
 }
 
-/* Scroll Testing
-.parent {
-    width: 300px;
-    border: 5px solid red;
-    overflow: hidden;
-    touch-action: none;
-    user-select: none;
+.title {
+    font-family: earwig;
+    font-size: 40px;
+    margin-block: 5px;
 }
 
-.child {
-    width: 1000px;
-    padding: 10px;
+/* The following triangles are from https://css-generators.com/triangle-shapes/ */
+
+/* HTML: <div class="triangle"></div> */
+.triangle-up {
+    margin: auto auto;
+    width: 40px;
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% 0,100% 100%,0 100%);
+    background: black;
+    /*background: linear-gradient(45deg,#FA6900,#C02942);*/
 }
-*/
+
+/* HTML: <div class="triangle"></div> */
+.triangle-down {
+    margin: auto auto;
+    width: 40px;
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% 100%,100% 0,0 0);
+    background: black;
+    /*background: linear-gradient(45deg,#FA6900,#C02942);*/
+}
