@@ -51,6 +51,14 @@ window.onload = () => {
             if (deltaShift !== 0) {
                 inputElem.value = letterShift(deltaShift, inputElem.value);
                 lastTotalShift = newTotalShift;
+
+                if (inputElem.value === "unity hall 343" ||
+                    inputElem.value === "Unity Hall 343" ||
+                    inputElem.value === "UNITY HALL 343") {
+                    console.log("test");
+                    var popup = document.getElementById("popup");
+                    popup.classList.toggle("show");
+                }
             }
         };
 

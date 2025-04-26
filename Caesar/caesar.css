@@ -2,6 +2,7 @@
 :root {
     --button-color: rgb(88, 133, 76, 0.6);
     --button-hover: rgb(88, 133, 76, 0.8);
+    --opaque-color: rgb(0, 0, 0, 0.15);
 }
 
 @font-face {
@@ -118,4 +119,30 @@ body {
     clip-path: polygon(50% 100%,100% 0,0 0);
     background: black;
     /*background: linear-gradient(45deg,#FA6900,#C02942);*/
+}
+
+.popup {
+    display: inline; /* or inline-block if you need */
+    cursor: pointer;
+}
+
+.popup .popuptext {
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    visibility: hidden;
+    width: 80%; /* take up full width of parent if you want */
+    background-color: var(--opaque-color);
+    color: #000;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    margin: auto auto;
+    margin-top: 10px; /* space from trigger */
+    display: none; /* hide initially */
+    position: static; /* not absolute anymore */
+}
+
+.popup .show {
+    visibility: visible;
+    display: block; /* now shows up like a paragraph */
 }
