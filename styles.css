@@ -125,3 +125,56 @@ li {
 #sig-under {
     margin-top: 0px;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+
+    #header {
+        height: 100px;
+    }
+
+    #spacer {
+        height: 130px;
+    }
+
+    .title {
+        font-family: earwig;
+        font-size: 35px;
+        margin-block: 5px;
+    }    
+
+    .navbutton {
+        font-size: 10px;
+        padding-inline: 10px;
+        padding-block: 10px;
+    }
+
+    #navbar {
+        top: 100px;
+    }
+
+    .info {
+        width: 90%;
+        margin: auto auto;
+        display: block;
+        max-width: 350px;
+    }
+
+    #mission, #beliefs, #lotus-thoughts  {
+        margin: 0 0;
+        padding-bottom: 30px;
+        width: 100%;
+        display: block;
+        min-width: 100px;
+        float: none;
+    }
+
+    h2 {
+        font-family: earwig;
+        font-size: 25px;
+        margin-block: 5px;
+        font-weight: bold;
+    }
+}
