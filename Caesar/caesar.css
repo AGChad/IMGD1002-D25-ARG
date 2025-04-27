@@ -123,26 +123,37 @@ body {
 
 .popup {
     display: inline; /* or inline-block if you need */
-    cursor: pointer;
+    padding-inline: 2px;
 }
 
 .popup .popuptext {
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     visibility: hidden;
-    width: 80%; /* take up full width of parent if you want */
+    width: 60%; /* take up full width of parent if you want */
     background-color: var(--opaque-color);
     color: #000;
     text-align: left;
     border-radius: 6px;
     padding: 10px;
+    padding-bottom: 0px;
     margin: auto auto;
-    margin-top: 10px; /* space from trigger */
-    display: none; /* hide initially */
-    position: static; /* not absolute anymore */
 }
 
 .popup .show {
     visibility: visible;
     display: block; /* now shows up like a paragraph */
+}
+
+.status {
+    margin: auto auto;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: rgb(0, 0, 0, 0.1);*/
+}
+
+h2 {
+    margin: 0 0 0 0;
+    font-size: 30px;
+    display: inline-block;
 }
