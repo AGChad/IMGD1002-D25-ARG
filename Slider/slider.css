@@ -31,6 +31,7 @@ a {
     background-color: #d7c3cd;
     margin: auto auto;
     display: inline-block;
+    font-size: 20px;
 }
 
 .visible {
@@ -44,4 +45,15 @@ a {
 
 .tile:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .secret {
+        font-size: 30px;
+    }
+
+    .secret-button{
+        margin: 20px auto;
+        font-size: 20px;
+    }
 }

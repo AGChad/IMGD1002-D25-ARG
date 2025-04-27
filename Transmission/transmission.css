@@ -13,6 +13,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-image: url("../newpaper_flora.jpg");
     background-repeat: repeat;
+    font-weight: bold;
 }
 
 h1 {
