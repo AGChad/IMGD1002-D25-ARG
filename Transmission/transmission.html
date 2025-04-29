@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Transmission</title>
+        <script src="transmission.js"></script>
+        <link rel="stylesheet" href="transmission.css">
+        <link rel="icon" href="../Slider/non_corporate_logo.png">
+    </head>
+    <script data-goatcounter="https://re-energex.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+    <body>
+        <a href="../home.html">
+            <button class="back-button">Back</button>
+        </a>
+        <div class="spacer"></div>
+
+        <h1 class="title">transmission</h1>
+        <div id="message">
+            <p>
+                We have intercepted a phone call between Ivor and a fellow Lazarus employee. The phone call seems to hint at a meeting location between the
+                two, after which Ivor will likely head back to the location of his lab where the violet is held.
+                Trail him from the meeting point to the lab he heads towards, and write down the location in which
+                he disappears at. <b style="color:red;">DO NOT FOLLOW HIM FURTHER</b>. A man such as Ivor is likely
+                to leave his lab heavily booby trapped, and anyone without proper experience could get themselves
+                hurt. You will simply gather the intelligence, and we will conduct the heist.</p>
+            </p>
+            <audio controls src="Ivor Phone Call.m4a" id="phone-call"></audio>
+        </div>
+        <div id="password">
+            <p>You can tell us the information you found here</p>
+            </p>
+            <label for="location-password">Lab's Location:</label>
+            <input type="text"
+                id="location-password"
+                name="name"
+                size="20" />
+            <br>
+            <button class="submit" onClick="checkPassword()">Submit</button>
+        </div>
+    </body>
+    </html>

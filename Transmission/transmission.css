@@ -1,0 +1,78 @@
+:root {
+    --button-color: rgb(88, 133, 76, 0.6);
+    --button-hover: rgb(88, 133, 76, 0.8);
+}
+
+@font-face {
+    font-family: earwig;
+    src: url("../fonts/earwig_factory/earwig factory rg.otf");
+}
+
+body {
+    text-align: center;   
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../newpaper_flora.jpg");
+    background-repeat: repeat;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: earwig;
+    font-size: 75px;
+    margin-block: 25px;
+}
+
+.title {
+    font-family: earwig;
+    font-size: 65px;
+    margin-block: 5px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    font-size: large;
+    font-weight: bold;
+    font-family: monospace; 
+    border: none;
+    border-radius: 5px;
+    display: block;
+    background-color: var(--button-color);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-inline: 25px;
+    padding-block: 15px;
+}
+
+.submit {
+    display: inline-block;
+    padding-inline: 20px;
+    padding-block: 10px;
+    margin-top: 20px;
+    min-width: 40px;
+}
+
+.spacer {
+    width: 70px;
+    height: 30px;
+}
+
+#message {
+    margin-inline: auto;
+    width: 70%;
+    min-width: 500px;
+    padding-bottom: 50px;
+}
