@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Caesar Cipher</title>
+        <script src="Caesar.js"></script>
+        <link rel="stylesheet" href="caesar.css">
+        <link rel="icon" href="../Slider/non_corporate_logo.png">
+    </head>
+    <script data-goatcounter="https://re-energex.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+    <body>
+
+        <a href="../home.html">
+            <button class="back-button">Back</button>
+        </a>
+        <div class="spacer"></div>
+
+        <div class="title" id="header">
+            <h1>crack the code</h1>
+        </div>
+
+        <div id="puzzle-wrapper">
+            <input class="input" type="text" id="encoded" name="encoded"><br><br>
+            <div class="triangle-down"></div>
+            <div class="scroller">
+                <ul class="tag-list scroller-inner">
+                    <!-- (Temporary?) spacer -->
+                    <li class="letter">S</li><li class="letter">T</li><li class="letter">U</li><li class="letter">V</li>
+                    <li class="letter">W</li><li class="letter">X</li><li class="letter">Y</li><li class="letter">Z</li>
+
+                    <!-- Selector -->
+                    <li class="letter">A</li>
+                    <li class="letter">B</li><li class="letter">C</li><li class="letter">D</li><li class="letter">E</li>
+                    <li class="letter">F</li><li class="letter">G</li><li class="letter">H</li><li class="letter">I</li>
+                    <li class="letter">J</li><li class="letter">K</li><li class="letter">L</li><li class="letter">M</li>
+                    <li class="letter">N</li><li class="letter">O</li><li class="letter">P</li><li class="letter">Q</li>
+                    <li class="letter">R</li><li class="letter">S</li><li class="letter">T</li><li class="letter">U</li>
+                    <li class="letter">V</li><li class="letter">W</li><li class="letter">X</li><li class="letter">Y</li>
+                    <li class="letter">Z</li>
+
+                    <!-- (Temporary?) spacer -->
+                    <li class="letter">A</li><li class="letter">B</li><li class="letter">C</li><li class="letter">D</li>
+                    <li class="letter">E</li><li class="letter">F</li><li class="letter">G</li><li class="letter">H</li>
+                    <li class="letter">I</li>
+                </ul>
+            </div>
+            <div class="scroller">
+                <ul class="tag-list scroller-inner">
+                    <!-- (Temporary?) spacer -->
+                    <li class="letter">S</li><li class="letter">T</li><li class="letter">U</li><li class="letter">V</li>
+                    <li class="letter">W</li><li class="letter">X</li><li class="letter">Y</li><li class="letter">Z</li>
+
+                    <!-- Selector -->
+                    <li class="letter">A</li>
+                    <li class="letter">B</li><li class="letter">C</li><li class="letter">D</li><li class="letter">E</li>
+                    <li class="letter">F</li><li class="letter">G</li><li class="letter">H</li><li class="letter">I</li>
+                    <li class="letter">J</li><li class="letter">K</li><li class="letter">L</li><li class="letter">M</li>
+                    <li class="letter">N</li><li class="letter">O</li><li class="letter">P</li><li class="letter">Q</li>
+                    <li class="letter">R</li><li class="letter">S</li><li class="letter">T</li><li class="letter">U</li>
+                    <li class="letter">V</li><li class="letter">W</li><li class="letter">X</li><li class="letter">Y</li>
+                    <li class="letter">Z</li>
+
+                    <!-- (Temporary?) spacer -->
+                    <li class="letter">A</li><li class="letter">B</li><li class="letter">C</li><li class="letter">D</li>
+                    <li class="letter">E</li><li class="letter">F</li><li class="letter">G</li><li class="letter">H</li>
+                    <li class="letter">I</li>
+                </ul>
+            </div>
+            <div class="scroller">
+                <ul class="tag-list scroller-inner">
+                    <!-- (Temporary?) spacer -->
+                    <li class="letter">S</li><li class="letter">T</li><li class="letter">U</li><li class="letter">V</li>
+                    <li class="letter">W</li><li class="letter">X</li><li class="letter">Y</li><li class="letter">Z</li>
+
+                    <!-- Selector -->
+                    <li class="letter">A</li>
+                    <li class="letter">B</li><li class="letter">C</li><li class="letter">D</li><li class="letter">E</li>
+                    <li class="letter">F</li><li class="letter">G</li><li class="letter">H</li><li class="letter">I</li>
+                    <li class="letter">J</li><li class="letter">K</li><li class="letter">L</li><li class="letter">M</li>
+                    <li class="letter">N</li><li class="letter">O</li><li class="letter">P</li><li class="letter">Q</li>
+                    <li class="letter">R</li><li class="letter">S</li><li class="letter">T</li><li class="letter">U</li>
+                    <li class="letter">V</li><li class="letter">W</li><li class="letter">X</li><li class="letter">Y</li>
+                    <li class="letter">Z</li>
+
+                    <!-- (Temporary?) spacer -->
+                    <li class="letter">A</li><li class="letter">B</li><li class="letter">C</li><li class="letter">D</li>
+                    <li class="letter">E</li><li class="letter">F</li><li class="letter">G</li><li class="letter">H</li>
+                    <li class="letter">I</li>
+                </ul>
+            </div>
+            <div class="triangle-up"></div>
+            <div class="popup">
+                <div class="post popuptext" id="popup">
+                    <div class="status">
+                        <h2 class="left">4/30/2025</h2>
+                        <h2 class="right">REPORT</h2>
+                    </div>
+                    <p class="inner-text">Wow, I didn't expect you to find it so fast! Once again do not go to the lab
+                        right now, our experts will scope it out before you are given clearance to go into the lab. We
+                        should have all the preliminary work done around 6:30 tomorrow, so by then you should be able to go
+                        to the lab. Until then, await further notice. </p>
+                </div>
+            </div>
+
+
+            <!--
+            <div class="parent">
+                <div class="child">
+                    <b>Click, hold and move pointer</b>. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum
+                </div>
+            </div>
+            -->
+        </div>
+
+    </body>
+    </html>
